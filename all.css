@@ -142,6 +142,7 @@ a {
 body {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(white, #50a88b);
 }
 
 h1 {
@@ -162,12 +163,14 @@ p {
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 30px auto;
   padding: 30px;
   display: flex;
   justify-content: center;
-  background: radial-gradient(circle, #fff, rgba(0, 0, 0, 0.384));
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid rgba(236, 12, 12, 0.322);
 }
 .container .header {
   width: 25%;
@@ -203,7 +206,7 @@ p {
 .container .border {
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
-  border-left: 20px solid rgba(75, 69, 69, 0.137);
+  border-left: 20px solid rgba(146, 95, 95, 0.205);
   margin-right: 30px;
 }
 .container .content {
@@ -241,9 +244,5 @@ p {
   color: #00f;
 }
 .container .footer img {
-  display: block;
   max-width: 100%;
-  width: 100px;
-  height: 50px;
-  border: 1px solid #000;
 }
