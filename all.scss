@@ -1,10 +1,11 @@
-@import '../work/sass/reset';
-@import '../work/sass/variable';
-@import '../work/sass/mixin';
+@import "../work/sass/setting/reset";
+@import "../work/sass/setting/variable";
+@import "../work/sass/setting/mixin";
+
 body {
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
-    background: radial-gradient( rgb(255, 255, 255), rgb(80, 168, 139));
+    background: radial-gradient(rgb(255, 255, 255), rgb(80, 168, 139));
 }
 
 h1 {
@@ -30,17 +31,19 @@ p {
     padding: 30px;
     display: flex;
     justify-content: center;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 20px solid rgba(236, 12, 12, 0.322);
+    border: 30px ridge rgba(196, 194, 194, 0.466);
+
     .header {
         width: 25%;
         margin-right: 30px;
         padding-right: 10px;
+        position: relative;
+
         h1 {
             text-align: center;
             margin-bottom: 30px;
         }
+
         h3 {
             font-size: $font-m;
             font-weight: bold;
@@ -48,15 +51,18 @@ p {
             padding-left: 10px;
             margin-bottom: 10px;
         }
+
         .phrase {
             margin-left: 20px;
             margin-bottom: 50px;
         }
+
         ul {
             li {
                 display: flex;
                 align-items: center;
                 margin-bottom: 10px;
+
                 .material-icons {
                     margin-right: 5px;
                     padding: 2px;
@@ -66,18 +72,22 @@ p {
             }
         }
     }
+
     .border {
         border-top: 50px solid transparent;
         border-bottom: 50px solid transparent;
         border-left: 20px solid rgba(146, 95, 95, 0.205);
         margin-right: 30px;
     }
+
     .content {
         width: 30%;
         margin-right: 30px;
         padding-right: 10px;
+
         li {
             margin-bottom: 20px;
+
             h3 {
                 border-left: 2px solid rgb(119, 107, 100);
                 border-bottom: 3px solid rgb(112, 106, 106);
@@ -87,8 +97,10 @@ p {
             }
         }
     }
+
     .footer {
         width: 35%;
+
         h3 {
             margin-bottom: 10px;
             padding-left: 5px;
@@ -96,15 +108,19 @@ p {
             border-left: 3px solid rgba(0, 0, 0, 0.185);
             border-bottom: 5px solid rgba(0, 0, 0, 0.301);
         }
+
         .success {
             margin-bottom: 30px;
+
             p {
                 margin-bottom: 20px;
             }
+
             a:hover {
                 color: #00f;
             }
         }
+
         img {
             max-width: 100%;
         }
